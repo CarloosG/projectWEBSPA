@@ -1,16 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CancionListComponent } from './cancion-list/cancion-list.component';
+import { CreateCancionComponent } from './create-cancion/create-cancion.component';
+import { FormsModule } from '@angular/forms';
+import { UpdateCancionComponent } from './update-cancion/update-cancion.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CancionListComponent,
+    CreateCancionComponent,
+    UpdateCancionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
