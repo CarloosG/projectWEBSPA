@@ -7,13 +7,15 @@ import { CancionListComponent } from './cancion-list/cancion-list.component';
 import { CreateCancionComponent } from './create-cancion/create-cancion.component';
 import { FormsModule } from '@angular/forms';
 import { UpdateCancionComponent } from './update-cancion/update-cancion.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CancionListComponent,
     CreateCancionComponent,
-    UpdateCancionComponent
+    UpdateCancionComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
